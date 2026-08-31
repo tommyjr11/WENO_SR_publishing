@@ -1,0 +1,19 @@
+{
+  "device": "cuda",
+  "hllc_max_abs_diff_vs_direct_numpy": {
+    "direction_1": 1.0658141036401503e-14,
+    "direction_2": 1.4210854715202004e-14
+  },
+  "hllc_max_abs_diff_vs_weno7": {
+    "direction_1": 0.0,
+    "direction_2": 0.0
+  },
+  "hllc_max_scaled_diff_vs_direct_numpy": {
+    "direction_1": 8.548717289613705e-15,
+    "direction_2": 1.3877787807814457e-14
+  },
+  "hllc_tiny": 1e-16,
+  "periodic_fp64": "bitwise pass",
+  "periodic_mixed": "bitwise pass",
+  "tiny_regularization_hllc": "finite and bitwise-matched pass"
+}

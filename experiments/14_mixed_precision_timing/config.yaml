@@ -1,0 +1,14 @@
+experiment_id: "14_mixed_precision_timing"
+title: "Mixed-precision WENO5 inference timing"
+problem: "Riemann C.4"
+grid: "400x400"
+warmup: "one untimed run per method"
+repeats: 3
+excluded_costs: "compilation, loading, initialization, diagnostics, plotting, output"
+selected_checkpoints:
+  weno5_sr_fp64: "../../models/weno5_sr_fp64_step012250.npz"
+  weno5_sr_fp32: "../../models/weno5_sr_fp32_step016500.npz"
+  weno7_sr_fp64: "../../models/weno7_sr_fp64_step016750.npz"
+reflection_symmetrised_inference: true
+eno_cutoff: false
+raw_data_in_release: false

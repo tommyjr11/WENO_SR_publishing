@@ -1,0 +1,35 @@
+{
+  "artifact_policy": "Derived figures and compact tables only; raw numerical fields are excluded.",
+  "artifacts": [
+    {
+      "bytes": 52788,
+      "destination": "experiments/12_shock_bubble_2d_ma30/figures/mock_schlieren.pdf",
+      "sha256": "dc41ab861bd91cd183b3ebd61f04cfcee6805117263269d41bf6f01e8e8e966f",
+      "source": "weno_z_borges_p2_results/figures/shockbubble_2d/ma30/mock_schlieren_with_weno_z.pdf"
+    },
+    {
+      "bytes": 51114,
+      "destination": "experiments/12_shock_bubble_2d_ma30/figures/selected_density_linecuts.pdf",
+      "sha256": "a83007398e233bb86d2aacf8af279b6f29945d0f8641087823f04e6089b2d984",
+      "source": "weno_z_borges_p2_results/figures/shockbubble_2d/ma30/selected_density_linecuts_with_weno_z.pdf"
+    },
+    {
+      "bytes": 2428,
+      "destination": "experiments/12_shock_bubble_2d_ma30/tables/linecut_l1.csv",
+      "sha256": "3c4b26a2a69f01bc0cae01602064a61ea2841bfda9867462b9ea122ee16fdcbe",
+      "source": "weno_z_borges_p2_results/tables/shockbubble_2d_ma30_linecuts_with_weno_z.csv"
+    }
+  ],
+  "experiment": "12_shock_bubble_2d_ma30",
+  "manuscript_location": "Section 4, subsection label subsec:shock_bubble_results (Mach 3)",
+  "manuscript_source": "WENO_NN/section4.tex",
+  "plot_entry_points": [
+    "weno_z_borges_p2_results.plot_shockbubble_2d"
+  ],
+  "run_entry_point": "experiments/12_shock_bubble_2d_ma30/run.sh",
+  "selected_checkpoints": {
+    "weno5_sr_fp32": "models/weno5_sr_fp32_step016500.npz",
+    "weno5_sr_fp64": "models/weno5_sr_fp64_step012250.npz",
+    "weno7_sr_fp64": "models/weno7_sr_fp64_step016750.npz"
+  }
+}

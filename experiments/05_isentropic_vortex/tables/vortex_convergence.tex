@@ -1,0 +1,48 @@
+\begin{table}[H]
+\centering
+\caption{Density errors and observed orders for the periodic isentropic vortex at $t=2$ and CFL $0.4$.}
+\label{tab:vortex_convergence}
+\scriptsize
+\setlength{\tabcolsep}{3.7pt}
+\renewcommand{\arraystretch}{0.90}
+\begin{tabular}{lrrrrr}
+\toprule
+Method & $N$ & $L_1(\rho)$ & order & $L_2(\rho)$ & order \\
+\midrule
+WENO5-JS-RK3 & 25 & 2.095e-03 & -- & 9.741e-03 & -- \\
+WENO5-JS-RK3 & 50 & 2.585e-04 & 3.019 & 1.307e-03 & 2.898 \\
+WENO5-JS-RK3 & 100 & 1.705e-05 & 3.922 & 9.508e-05 & 3.781 \\
+WENO5-JS-RK3 & 200 & 7.565e-07 & 4.494 & 4.128e-06 & 4.526 \\
+\midrule
+WENO5-Z-RK3 & 25 & 1.204e-03 & -- & 4.939e-03 & -- \\
+WENO5-Z-RK3 & 50 & 1.394e-04 & 3.111 & 7.597e-04 & 2.701 \\
+WENO5-Z-RK3 & 100 & 8.441e-06 & 4.045 & 4.213e-05 & 4.172 \\
+WENO5-Z-RK3 & 200 & 3.271e-07 & 4.690 & 1.688e-06 & 4.641 \\
+\midrule
+WENO5-SR-RK3 & 25 & 1.017e-03 & -- & 4.641e-03 & -- \\
+WENO5-SR-RK3 & 50 & 8.401e-05 & 3.597 & 3.996e-04 & 3.538 \\
+WENO5-SR-RK3 & 100 & 6.778e-06 & 3.632 & 2.875e-05 & 3.797 \\
+WENO5-SR-RK3 & 200 & 2.701e-07 & 4.649 & 1.295e-06 & 4.472 \\
+\midrule
+WENO5-SR-FP32-RK3 & 25 & 1.017e-03 & -- & 4.715e-03 & -- \\
+WENO5-SR-FP32-RK3 & 50 & 7.741e-05 & 3.715 & 3.647e-04 & 3.692 \\
+WENO5-SR-FP32-RK3 & 100 & 6.118e-06 & 3.661 & 2.522e-05 & 3.854 \\
+WENO5-SR-FP32-RK3 & 200 & 3.777e-07 & 4.018 & 1.899e-06 & 3.731 \\
+\midrule
+WENO7-JS-RK4 & 25 & 1.487e-03 & -- & 7.105e-03 & -- \\
+WENO7-JS-RK4 & 50 & 1.308e-04 & 3.507 & 6.750e-04 & 3.396 \\
+WENO7-JS-RK4 & 100 & 4.642e-06 & 4.817 & 2.149e-05 & 4.973 \\
+WENO7-JS-RK4 & 200 & 1.070e-07 & 5.439 & 6.362e-07 & 5.078 \\
+\midrule
+WENO7-Z-RK4 & 25 & 9.247e-04 & -- & 3.808e-03 & -- \\
+WENO7-Z-RK4 & 50 & 8.301e-05 & 3.478 & 4.474e-04 & 3.089 \\
+WENO7-Z-RK4 & 100 & 2.390e-06 & 5.118 & 1.311e-05 & 5.093 \\
+WENO7-Z-RK4 & 200 & 2.933e-08 & 6.348 & 1.720e-07 & 6.252 \\
+\midrule
+WENO7-SR-RK4 & 25 & 7.766e-04 & -- & 3.424e-03 & -- \\
+WENO7-SR-RK4 & 50 & 6.400e-05 & 3.601 & 3.430e-04 & 3.320 \\
+WENO7-SR-RK4 & 100 & 2.962e-06 & 4.433 & 1.514e-05 & 4.502 \\
+WENO7-SR-RK4 & 200 & 6.826e-08 & 5.440 & 5.048e-07 & 4.907 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,35 @@
+{
+  "artifact_policy": "Derived figures and compact tables only; raw numerical fields are excluded.",
+  "artifacts": [
+    {
+      "bytes": 53914,
+      "destination": "experiments/03_lax_shock_tube/figures/lax_primitive.pdf",
+      "sha256": "45244074687f7f65ece5b20591348e05e05067c527f19fcff08c6fb526e21fb3",
+      "source": "weno_z_borges_p2_results/figures/riemann_1d/lax/lax_primitive_compare_with_weno_z_rminus1.pdf"
+    },
+    {
+      "bytes": 637,
+      "destination": "experiments/03_lax_shock_tube/tables/lax_l1.tex",
+      "sha256": "24d8beac7684b701966cac9d3f467452605cccd483bf4be3959787864df3a949",
+      "source": "for_paper_results/tables/lax_l1_weno_z.tex"
+    },
+    {
+      "bytes": 2477,
+      "destination": "experiments/03_lax_shock_tube/tables/lax_metrics.csv",
+      "sha256": "23d36dc6484ee0d793e8e4185ae149917765bbd28e1e5c2ff1800cb4ac003562",
+      "source": "weno_z_borges_p2_results/tables/riemann_1d/lax/lax_errors_vs_exact_fv.csv"
+    }
+  ],
+  "experiment": "03_lax_shock_tube",
+  "manuscript_location": "Section 4, subsection label subsec:lax_results",
+  "manuscript_source": "WENO_NN/section4.tex",
+  "plot_entry_points": [
+    "weno_z_borges_p2_results.plot_lax_paper"
+  ],
+  "run_entry_point": "experiments/03_lax_shock_tube/run.sh",
+  "selected_checkpoints": {
+    "weno5_sr_fp32": "models/weno5_sr_fp32_step016500.npz",
+    "weno5_sr_fp64": "models/weno5_sr_fp64_step012250.npz",
+    "weno7_sr_fp64": "models/weno7_sr_fp64_step016750.npz"
+  }
+}

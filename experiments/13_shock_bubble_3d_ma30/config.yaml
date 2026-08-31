@@ -1,0 +1,19 @@
+experiment_id: "13_shock_bubble_3d_ma30"
+title: "Three-dimensional Mach-3 shock--bubble interaction"
+domain: "[0, 0.225] x [0, 0.089] x [0, 0.089]"
+grid: "224x88x88"
+context_grids: "448x176x176 WENO5/7-JS"
+reference_grid: "1120x440x440 WENO7--ADER4"
+shock_mach: 3.0
+boundary: "transmissive"
+cfl: 0.25
+t_end: 0.0001
+riemann_solver: "EVILIN"
+initial_quadrature: "3x3x3 Gauss-Legendre"
+selected_checkpoints:
+  weno5_sr_fp64: "../../models/weno5_sr_fp64_step012250.npz"
+  weno5_sr_fp32: "../../models/weno5_sr_fp32_step016500.npz"
+  weno7_sr_fp64: "../../models/weno7_sr_fp64_step016750.npz"
+reflection_symmetrised_inference: true
+eno_cutoff: false
+raw_data_in_release: false

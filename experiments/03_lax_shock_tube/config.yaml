@@ -1,0 +1,17 @@
+experiment_id: "03_lax_shock_tube"
+title: "Lax shock tube"
+domain: "[-5, 5]"
+grid: "N=200"
+boundary: "transmissive"
+cfl: 0.8
+t_end: 1.3
+riemann_solver: "HLLC"
+reconstruction_space: "local characteristic"
+reference: "exact finite-volume Riemann solution"
+selected_checkpoints:
+  weno5_sr_fp64: "../../models/weno5_sr_fp64_step012250.npz"
+  weno5_sr_fp32: "../../models/weno5_sr_fp32_step016500.npz"
+  weno7_sr_fp64: "../../models/weno7_sr_fp64_step016750.npz"
+reflection_symmetrised_inference: true
+eno_cutoff: false
+raw_data_in_release: false

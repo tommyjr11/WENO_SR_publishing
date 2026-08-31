@@ -1,0 +1,35 @@
+{
+  "artifact_policy": "Derived figures and compact tables only; raw numerical fields are excluded.",
+  "artifacts": [
+    {
+      "bytes": 47973,
+      "destination": "experiments/02_sod_shock_tube/figures/sod_density.pdf",
+      "sha256": "e5a0aba233a1115346358ad15124ede178f64cb0fc14b4259c23fc46d26548dc",
+      "source": "weno_z_borges_p2_results/figures/riemann_1d/sod/N100_t020_cfl08/sod_density_points_with_weno_z_rminus1.pdf"
+    },
+    {
+      "bytes": 655,
+      "destination": "experiments/02_sod_shock_tube/tables/sod_l1.tex",
+      "sha256": "12a46d80e357270261aceda151ab22c24c92d42f55473a291b47f41aead74f84",
+      "source": "for_paper_results/tables/sod_n100_l1_weno_z.tex"
+    },
+    {
+      "bytes": 1219,
+      "destination": "experiments/02_sod_shock_tube/tables/sod_metrics.csv",
+      "sha256": "342a18f10d96bd6de394ed5d6908af2f246b14f677453c7ee9b35bb741c4bbbf",
+      "source": "weno_z_borges_p2_results/tables/riemann_1d/sod/N100_t020_cfl08/sod_density_errors_vs_exact_fv.csv"
+    }
+  ],
+  "experiment": "02_sod_shock_tube",
+  "manuscript_location": "Section 4, subsection label subsec:sod_results",
+  "manuscript_source": "WENO_NN/section4.tex",
+  "plot_entry_points": [
+    "weno_z_borges_p2_results.plot_riemann_1d_zoom"
+  ],
+  "run_entry_point": "experiments/02_sod_shock_tube/run.sh",
+  "selected_checkpoints": {
+    "weno5_sr_fp32": "models/weno5_sr_fp32_step016500.npz",
+    "weno5_sr_fp64": "models/weno5_sr_fp64_step012250.npz",
+    "weno7_sr_fp64": "models/weno7_sr_fp64_step016750.npz"
+  }
+}

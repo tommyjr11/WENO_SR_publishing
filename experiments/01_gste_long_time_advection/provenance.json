@@ -1,0 +1,35 @@
+{
+  "artifact_policy": "Derived figures and compact tables only; raw numerical fields are excluded.",
+  "artifacts": [
+    {
+      "bytes": 28726,
+      "destination": "experiments/01_gste_long_time_advection/figures/gste_all_methods.pdf",
+      "sha256": "f21b21946947693e8cf4decd28929a8c29923700f41b6a07a62d2dbfb9ba255f",
+      "source": "weno_z_borges_p2_results/figures/gste/N200_t10_cfl06/gste_all_methods_with_weno_z_rminus1.pdf"
+    },
+    {
+      "bytes": 645,
+      "destination": "experiments/01_gste_long_time_advection/tables/gste_l1.tex",
+      "sha256": "3389cbd95549b906a5acc8b97fcdd1c7bd3fdb87a264976fb6c4c5dcd1da746b",
+      "source": "for_paper_results/tables/gste_l1_weno_z.tex"
+    },
+    {
+      "bytes": 856,
+      "destination": "experiments/01_gste_long_time_advection/tables/gste_metrics.csv",
+      "sha256": "9ad238e1d5c1e3583ccb09cc37e027ee419a88e372bb6fde938896e76c77ab3a",
+      "source": "weno_z_borges_p2_results/tables/gste/N200_t10_cfl06/gste_errors_with_weno_z_rminus1.csv"
+    }
+  ],
+  "experiment": "01_gste_long_time_advection",
+  "manuscript_location": "Section 4, subsection label subsec:gste_results",
+  "manuscript_source": "WENO_NN/section4.tex",
+  "plot_entry_points": [
+    "weno_z_borges_p2_results.plot_gste"
+  ],
+  "run_entry_point": "experiments/01_gste_long_time_advection/run.sh",
+  "selected_checkpoints": {
+    "weno5_sr_fp32": "models/weno5_sr_fp32_step016500.npz",
+    "weno5_sr_fp64": "models/weno5_sr_fp64_step012250.npz",
+    "weno7_sr_fp64": "models/weno7_sr_fp64_step016750.npz"
+  }
+}

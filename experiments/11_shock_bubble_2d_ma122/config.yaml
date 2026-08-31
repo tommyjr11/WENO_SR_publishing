@@ -1,0 +1,18 @@
+experiment_id: "11_shock_bubble_2d_ma122"
+title: "Planar Mach-1.22 shock--helium-bubble interaction"
+domain: "[0, 0.225] x [0, 0.089]"
+grid: "1000x396"
+reference_grid: "2000x791 WENO7-JS--RK4"
+shock_mach: 1.22
+boundary: "transmissive"
+cfl: 0.4
+t_end: 0.0006
+riemann_solver: "HLLC"
+initial_quadrature: "15x15 Gauss-Legendre"
+selected_checkpoints:
+  weno5_sr_fp64: "../../models/weno5_sr_fp64_step012250.npz"
+  weno5_sr_fp32: "../../models/weno5_sr_fp32_step016500.npz"
+  weno7_sr_fp64: "../../models/weno7_sr_fp64_step016750.npz"
+reflection_symmetrised_inference: true
+eno_cutoff: false
+raw_data_in_release: false

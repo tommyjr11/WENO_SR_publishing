@@ -1,0 +1,29 @@
+{
+  "artifact_policy": "Derived figures and compact tables only; raw numerical fields are excluded.",
+  "artifacts": [
+    {
+      "bytes": 1518208,
+      "destination": "experiments/06_riemann_c3/figures/riemann_c3.pdf",
+      "sha256": "9a5a3c1571ef6bccc329c0e724668fa7742e52b62ba6d3a98338a34d38d73336",
+      "source": "weno_z_borges_p2_results/figures/riemann/c3/fields_with_weno7_z_hybrid.pdf"
+    },
+    {
+      "bytes": 2463,
+      "destination": "experiments/06_riemann_c3/tables/linecuts.csv",
+      "sha256": "48c5421e883dc298657d296cd6e6339da0eced75366dd23215e97f6b3e9508b1",
+      "source": "weno_z_borges_p2_results/tables/riemann_c3_linecuts_with_weno7_z.csv"
+    }
+  ],
+  "experiment": "06_riemann_c3",
+  "manuscript_location": "Section 4, subsection label subsec:riemann_results (C.3)",
+  "manuscript_source": "WENO_NN/section4.tex",
+  "plot_entry_points": [
+    "weno_z_borges_p2_results.plot_riemann"
+  ],
+  "run_entry_point": "experiments/06_riemann_c3/run.sh",
+  "selected_checkpoints": {
+    "weno5_sr_fp32": "models/weno5_sr_fp32_step016500.npz",
+    "weno5_sr_fp64": "models/weno5_sr_fp64_step012250.npz",
+    "weno7_sr_fp64": "models/weno7_sr_fp64_step016750.npz"
+  }
+}

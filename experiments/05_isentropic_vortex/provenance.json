@@ -1,0 +1,35 @@
+{
+  "artifact_policy": "Derived figures and compact tables only; raw numerical fields are excluded.",
+  "artifacts": [
+    {
+      "bytes": 31295,
+      "destination": "experiments/05_isentropic_vortex/figures/vortex_convergence.pdf",
+      "sha256": "2957aa0df98ef7b2edac03e52765845fa8c359d69188520de9a9a35f3889548f",
+      "source": "weno_z_borges_p2_results/figures/vortex_cfl04/vortex_convergence_with_weno_z.pdf"
+    },
+    {
+      "bytes": 2126,
+      "destination": "experiments/05_isentropic_vortex/tables/vortex_convergence.tex",
+      "sha256": "3ab63956b0899d80999f10fd2e577b9cafb20a801bdc598ed5af5aae18473698",
+      "source": "weno_z_borges_p2_results/tables/vortex_cfl04/vortex_convergence_with_weno_z.tex"
+    },
+    {
+      "bytes": 2136,
+      "destination": "experiments/05_isentropic_vortex/tables/vortex_convergence.md",
+      "sha256": "55d78177c12382bf9f293d6aaf8f24506910c7043d8463e8e1307594c338c765",
+      "source": "weno_z_borges_p2_results/tables/vortex_cfl04/vortex_convergence_with_weno_z.md"
+    }
+  ],
+  "experiment": "05_isentropic_vortex",
+  "manuscript_location": "Section 4, subsection label subsec:vortex_results",
+  "manuscript_source": "WENO_NN/section4.tex",
+  "plot_entry_points": [
+    "weno_z_borges_p2_results.plot_vortex"
+  ],
+  "run_entry_point": "experiments/05_isentropic_vortex/run.sh",
+  "selected_checkpoints": {
+    "weno5_sr_fp32": "models/weno5_sr_fp32_step016500.npz",
+    "weno5_sr_fp64": "models/weno5_sr_fp64_step012250.npz",
+    "weno7_sr_fp64": "models/weno7_sr_fp64_step016750.npz"
+  }
+}

@@ -1,0 +1,18 @@
+experiment_id: "10_double_mach_reflection"
+title: "Double Mach reflection"
+domain: "[0, 4] x [0, 1]"
+grid: "1200x300"
+boundary: "standard double-Mach inflow/reflection"
+cfl: 0.4
+t_end: 0.2
+riemann_solver: "HLLC"
+reconstruction_space: "local characteristic"
+initial_quadrature: "15-point Gauss-Legendre"
+density_contours: "29 common equally spaced levels"
+selected_checkpoints:
+  weno5_sr_fp64: "../../models/weno5_sr_fp64_step012250.npz"
+  weno5_sr_fp32: "../../models/weno5_sr_fp32_step016500.npz"
+  weno7_sr_fp64: "../../models/weno7_sr_fp64_step016750.npz"
+reflection_symmetrised_inference: true
+eno_cutoff: false
+raw_data_in_release: false

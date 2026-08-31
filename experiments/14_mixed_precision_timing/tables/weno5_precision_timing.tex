@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{WENO5 wall time on the $400^2$ Riemann configuration C.4. Compilation, model loading, initialisation, diagnostics, and output are excluded.}
+\label{tab:weno5_precision_timing}
+\begin{tabular}{llrrrr}
+\toprule
+Problem & Method & Mean (s) & Std. dev. (s) & Cost/JS & Overhead \\
+\midrule
+C.4 & WENO5-JS & 6.605 & 0.032 & 1.00$\times$ & 0.0\% \\
+C.4 & FP64 MLP & 39.333 & 0.280 & 5.96$\times$ & 495.5\% \\
+C.4 & FP32 MLP & 14.253 & 0.072 & 2.16$\times$ & 115.8\% \\
+\bottomrule
+\end{tabular}
+\end{table}

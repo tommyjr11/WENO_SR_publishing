@@ -1,0 +1,47 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+# Regenerated numerical fields and run state
+**/raw/
+**/runs/
+**/logs/
+**/checkpoints/
+!models/*.npz
+!code/snapshot/teacherfree_lab_weno5_v20_distance_balanced/runs/
+!code/snapshot/teacherfree_lab_weno5_v20_distance_balanced/runs/apost_weno5_v20_distance_balanced_cfl05_200k/
+!code/snapshot/teacherfree_lab_weno5_v20_distance_balanced/runs/apost_weno5_v20_distance_balanced_cfl05_200k/checkpoints/
+!code/snapshot/teacherfree_lab_weno5_v20_distance_balanced/runs/apost_weno5_v20_distance_balanced_cfl05_200k/checkpoints/model_step_012250.npz
+!code/snapshot/teacherfree_lab_weno5_v20_distance_balanced_mlp_f32_fast/runs/
+!code/snapshot/teacherfree_lab_weno5_v20_distance_balanced_mlp_f32_fast/runs/apost_weno5_v20_mlp_f32_fast_200k/
+!code/snapshot/teacherfree_lab_weno5_v20_distance_balanced_mlp_f32_fast/runs/apost_weno5_v20_mlp_f32_fast_200k/checkpoints/
+!code/snapshot/teacherfree_lab_weno5_v20_distance_balanced_mlp_f32_fast/runs/apost_weno5_v20_mlp_f32_fast_200k/checkpoints/model_step_016500.npz
+!code/snapshot/teacherfree_lab_weno7_rk4_distance_balanced_fast/runs/
+!code/snapshot/teacherfree_lab_weno7_rk4_distance_balanced_fast/runs/apost_weno7_rk4_distance_balanced_fast_4090_200k/
+!code/snapshot/teacherfree_lab_weno7_rk4_distance_balanced_fast/runs/apost_weno7_rk4_distance_balanced_fast_4090_200k/checkpoints/
+!code/snapshot/teacherfree_lab_weno7_rk4_distance_balanced_fast/runs/apost_weno7_rk4_distance_balanced_fast_4090_200k/checkpoints/model_step_016750.npz
+*.out
+*.log
+*.pid
+pid.txt
+nohup.out
+
+# Large numerical formats are not release artifacts
+*.npy
+*.bin
+*.pt
+*.pth
+
+# Local plot/build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz

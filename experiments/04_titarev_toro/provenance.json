@@ -1,0 +1,47 @@
+{
+  "artifact_policy": "Derived figures and compact tables only; raw numerical fields are excluded.",
+  "artifacts": [
+    {
+      "bytes": 109668,
+      "destination": "experiments/04_titarev_toro/figures/titarev_toro_N1001.pdf",
+      "sha256": "eba5d2f4098a217d8f0fef1a394740e3f6b6da137df8513239081c28a4a63a82",
+      "source": "weno_z_borges_p2_results/figures/titarev_toro_cfl08/N1001x10/titarev_density_with_weno_z_rminus1.pdf"
+    },
+    {
+      "bytes": 132874,
+      "destination": "experiments/04_titarev_toro/figures/titarev_toro_N2000.pdf",
+      "sha256": "9a8e07f3eee3e54249b17bf71031fbfdf1c7a8ede0d16ba87159a8c2979139c7",
+      "source": "weno_z_borges_p2_results/figures/titarev_toro_cfl08/N2000x10/titarev_density_with_weno_z_rminus1.pdf"
+    },
+    {
+      "bytes": 922,
+      "destination": "experiments/04_titarev_toro/tables/titarev_toro_l1.tex",
+      "sha256": "43b046fec19c48c65a4cfcc13b5914134446d91b73752bf2a45db7a842a0d73a",
+      "source": "for_paper_results/tables/titarev_toro_l1_weno_z.tex"
+    },
+    {
+      "bytes": 1063,
+      "destination": "experiments/04_titarev_toro/tables/titarev_toro_N1001_metrics.csv",
+      "sha256": "b78e60dc2b38dbebb10b6b938e5a6ef42356554c1b371addd439bcdf07952520",
+      "source": "weno_z_borges_p2_results/tables/titarev_toro_cfl08/N1001x10_density_errors.csv"
+    },
+    {
+      "bytes": 1078,
+      "destination": "experiments/04_titarev_toro/tables/titarev_toro_N2000_metrics.csv",
+      "sha256": "5bfe7ef4da8d401a9ccf5cc228411b3a537ce300c817629a484525eecfa0681a",
+      "source": "weno_z_borges_p2_results/tables/titarev_toro_cfl08/N2000x10_density_errors.csv"
+    }
+  ],
+  "experiment": "04_titarev_toro",
+  "manuscript_location": "Section 4, subsection label subsec:titarev_toro_results",
+  "manuscript_source": "WENO_NN/section4.tex",
+  "plot_entry_points": [
+    "weno_z_borges_p2_results.plot_titarev_toro"
+  ],
+  "run_entry_point": "experiments/04_titarev_toro/run.sh",
+  "selected_checkpoints": {
+    "weno5_sr_fp32": "models/weno5_sr_fp32_step016500.npz",
+    "weno5_sr_fp64": "models/weno5_sr_fp64_step012250.npz",
+    "weno7_sr_fp64": "models/weno7_sr_fp64_step016750.npz"
+  }
+}

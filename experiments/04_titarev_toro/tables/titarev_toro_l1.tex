@@ -1,0 +1,22 @@
+\begin{table}[H]
+\centering
+\caption{Density $L_1$ error for the Titarev--Toro problem at $t=5$ and CFL
+$0.8$.  Errors use the conservatively restricted WENO5-JS solution on
+$N=10001$ as the reference.  The lowest value at each resolution is bold.}
+\label{tab:titarev_toro_l1_weno_z}
+\small
+\setlength{\tabcolsep}{7pt}
+\begin{tabular}{lcc}
+\toprule
+Method & $N=1001$ & $N=2000$ \\
+\midrule
+WENO5-JS--RK3      & $4.582\times10^{-2}$ & $1.247\times10^{-2}$ \\
+WENO5-Z--RK3       & $3.709\times10^{-2}$ & $4.293\times10^{-3}$ \\
+WENO5-SR--RK3      & $\mathbf{1.682\times10^{-2}}$ & $2.121\times10^{-3}$ \\
+WENO5-SR-FP32--RK3 & $1.961\times10^{-2}$ & $1.907\times10^{-3}$ \\
+WENO7-JS--RK4      & $4.152\times10^{-2}$ & $3.199\times10^{-3}$ \\
+WENO7-Z--RK4       & $3.806\times10^{-2}$ & $2.073\times10^{-3}$ \\
+WENO7-SR--RK4      & $1.945\times10^{-2}$ & $\mathbf{1.849\times10^{-3}}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

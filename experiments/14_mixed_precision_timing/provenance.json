@@ -1,0 +1,21 @@
+{
+  "artifact_policy": "Derived figures and compact tables only; raw numerical fields are excluded.",
+  "artifacts": [
+    {
+      "bytes": 538,
+      "destination": "experiments/14_mixed_precision_timing/tables/weno5_precision_timing.tex",
+      "sha256": "dd006cbd44fea67ec61b1c2418717510faa592b4c050074b2eb9a9a9abc10f8f",
+      "source": "for_paper_results/tables/weno5_precision_timing.tex"
+    }
+  ],
+  "experiment": "14_mixed_precision_timing",
+  "manuscript_location": "Section 4, subsection label subsec:mixed_precision_cost",
+  "manuscript_source": "WENO_NN/section4.tex",
+  "plot_entry_points": [],
+  "run_entry_point": "experiments/14_mixed_precision_timing/run.sh",
+  "selected_checkpoints": {
+    "weno5_sr_fp32": "models/weno5_sr_fp32_step016500.npz",
+    "weno5_sr_fp64": "models/weno5_sr_fp64_step012250.npz",
+    "weno7_sr_fp64": "models/weno7_sr_fp64_step016750.npz"
+  }
+}

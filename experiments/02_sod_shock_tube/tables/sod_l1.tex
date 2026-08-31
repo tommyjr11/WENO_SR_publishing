@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\caption{Density $L_1$ error for the Sod shock tube using $N=100$, CFL
+$0.8$, and $t=0.2$.  Numerical and exact states are compared as finite-volume
+cell averages.}
+\label{tab:sod_n100_l1_weno_z}
+\small
+\begin{tabular}{lc}
+\toprule
+Method & $L_1(\rho)$ \\
+\midrule
+WENO5-JS--RK3      & $4.970\times10^{-3}$ \\
+WENO5-Z--RK3       & $4.572\times10^{-3}$ \\
+WENO5-SR--RK3      & $\mathbf{3.806\times10^{-3}}$ \\
+WENO5-SR-FP32--RK3 & $3.887\times10^{-3}$ \\
+WENO7-JS--RK4      & $4.934\times10^{-3}$ \\
+WENO7-Z--RK4       & $4.932\times10^{-3}$ \\
+WENO7-SR--RK4      & $3.997\times10^{-3}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

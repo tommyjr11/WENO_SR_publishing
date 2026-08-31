@@ -1,0 +1,72 @@
+{
+  "artifact_policy": "Derived figures and compact tables only; raw numerical fields are excluded.",
+  "artifacts": [
+    {
+      "bytes": 103657,
+      "destination": "experiments/13_shock_bubble_3d_ma30/figures/initial_configuration.png",
+      "sha256": "b35dc643a18624027fcfd0e6af5feb3c4a174d5ad23332010fad2b56b04db4d8",
+      "source": "for_paper_results/figures/shock_bubble.png"
+    },
+    {
+      "bytes": 329115,
+      "destination": "experiments/13_shock_bubble_3d_ma30/figures/volume_rendering.pdf",
+      "sha256": "990f8407878ee27f96af986a2ea85f4b495c06baf12153def4a7f9a3483887f5",
+      "source": "weno_z_borges_p2_results/figures/shockbubble_3d/N224x88x88/volume_render_all_methods_with_reference.pdf"
+    },
+    {
+      "bytes": 495150,
+      "destination": "experiments/13_shock_bubble_3d_ma30/figures/mock_schlieren.png",
+      "sha256": "0ecb25d98b0759d682b959bff03583f34000d7f574e3e7dffa7b80cf307c784a",
+      "source": "weno_z_borges_p2_results/figures/shockbubble_3d/N224x88x88/mock_schlieren_all_methods_with_weno_z_with_red.png"
+    },
+    {
+      "bytes": 57334,
+      "destination": "experiments/13_shock_bubble_3d_ma30/figures/density_line_x0085.pdf",
+      "sha256": "9ba80d229b478e891fd393e2392965cb72fe469ac1682180edf287e676541bc7",
+      "source": "weno_z_borges_p2_results/figures/shockbubble_3d/N224x88x88/reference_line_profiles/density_line_reference_compare_liney_x0p0850_z0p0445_auto_full.pdf"
+    },
+    {
+      "bytes": 61238,
+      "destination": "experiments/13_shock_bubble_3d_ma30/figures/density_line_x0097.pdf",
+      "sha256": "1cef684e6922f6563d5c60ca1c6eb265311453df56304349e9efede0b70cbafc",
+      "source": "weno_z_borges_p2_results/figures/shockbubble_3d/N224x88x88/reference_line_profiles/density_line_reference_compare_liney_x0p0970_z0p0445_auto_full.pdf"
+    },
+    {
+      "bytes": 40523,
+      "destination": "experiments/13_shock_bubble_3d_ma30/figures/density_line_x0114.pdf",
+      "sha256": "6452844454564deec3f1ab356ace898d610be52317b0abf251036eb8cff8e7d0",
+      "source": "weno_z_borges_p2_results/figures/shockbubble_3d/N224x88x88/reference_line_profiles/density_line_reference_compare_liney_x0p1140_z0p0445_auto_full.pdf"
+    },
+    {
+      "bytes": 1327,
+      "destination": "experiments/13_shock_bubble_3d_ma30/tables/density_line_x0085_errors.csv",
+      "sha256": "f77319e48b88dd9f8ba44f5b87c238fc094f26a6e18784d32a052316a6de512e",
+      "source": "weno_z_borges_p2_results/figures/shockbubble_3d/N224x88x88/reference_line_profiles/density_line_reference_compare_liney_x0p0850_z0p0445_auto_full_errors.csv"
+    },
+    {
+      "bytes": 1327,
+      "destination": "experiments/13_shock_bubble_3d_ma30/tables/density_line_x0097_errors.csv",
+      "sha256": "e72f3a83098ecceb99dcae7f8a750babc042ba62a1de778d624c4f76b060dd45",
+      "source": "weno_z_borges_p2_results/figures/shockbubble_3d/N224x88x88/reference_line_profiles/density_line_reference_compare_liney_x0p0970_z0p0445_auto_full_errors.csv"
+    },
+    {
+      "bytes": 1327,
+      "destination": "experiments/13_shock_bubble_3d_ma30/tables/density_line_x0114_errors.csv",
+      "sha256": "a863ba7946cb777224090aa977e6e101df1688b575071cc0fe9d6564709b2266",
+      "source": "weno_z_borges_p2_results/figures/shockbubble_3d/N224x88x88/reference_line_profiles/density_line_reference_compare_liney_x0p1140_z0p0445_auto_full_errors.csv"
+    }
+  ],
+  "experiment": "13_shock_bubble_3d_ma30",
+  "manuscript_location": "Section 4, subsection label subsec:shock_bubble_3d_results",
+  "manuscript_source": "WENO_NN/section4.tex",
+  "plot_entry_points": [
+    "weno_z_borges_p2_results.plot_shockbubble_3d",
+    "weno_z_borges_p2_results.plot_shockbubble_3d_linecuts"
+  ],
+  "run_entry_point": "experiments/13_shock_bubble_3d_ma30/run.sh",
+  "selected_checkpoints": {
+    "weno5_sr_fp32": "models/weno5_sr_fp32_step016500.npz",
+    "weno5_sr_fp64": "models/weno5_sr_fp64_step012250.npz",
+    "weno7_sr_fp64": "models/weno7_sr_fp64_step016750.npz"
+  }
+}

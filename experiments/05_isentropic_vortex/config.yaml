@@ -1,0 +1,16 @@
+experiment_id: "05_isentropic_vortex"
+title: "Periodic isentropic-vortex convergence"
+domain: "[-10, 10]^2"
+grids: "25^2, 50^2, 100^2, 200^2"
+boundary: "periodic"
+cfl: 0.4
+t_end: 2.0
+initial_quadrature: "15x15 Gauss-Legendre"
+reference: "exact translated finite-volume vortex"
+selected_checkpoints:
+  weno5_sr_fp64: "../../models/weno5_sr_fp64_step012250.npz"
+  weno5_sr_fp32: "../../models/weno5_sr_fp32_step016500.npz"
+  weno7_sr_fp64: "../../models/weno7_sr_fp64_step016750.npz"
+reflection_symmetrised_inference: true
+eno_cutoff: false
+raw_data_in_release: false

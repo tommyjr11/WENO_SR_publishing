@@ -1,0 +1,35 @@
+{
+  "artifact_policy": "Derived figures and compact tables only; raw numerical fields are excluded.",
+  "artifacts": [
+    {
+      "bytes": 636624,
+      "destination": "experiments/10_double_mach_reflection/figures/double_mach_weno5.pdf",
+      "sha256": "e83cd1c886e953efbeaf8af890d9fc1a0464c55658c00f831c97dc070d94cf95",
+      "source": "weno_z_borges_p2_results/figures/double_mach/double_mach_weno5_full_and_contour_zoom.pdf"
+    },
+    {
+      "bytes": 546212,
+      "destination": "experiments/10_double_mach_reflection/figures/double_mach_weno7.pdf",
+      "sha256": "d80d6c2f395e8cd32830c9d974a56484b68624a952849cc55e06bb63238f7e13",
+      "source": "weno_z_borges_p2_results/figures/double_mach/double_mach_weno7_full_and_contour_zoom.pdf"
+    },
+    {
+      "bytes": 2143,
+      "destination": "experiments/10_double_mach_reflection/tables/linecuts.csv",
+      "sha256": "386241847da5b3e6cfe99c013809787aac4c70a3a1e106da3b46e0d1e75cdf22",
+      "source": "weno_z_borges_p2_results/tables/double_mach_linecuts_with_weno_z.csv"
+    }
+  ],
+  "experiment": "10_double_mach_reflection",
+  "manuscript_location": "Section 4, subsection label subsec:double_mach_status",
+  "manuscript_source": "WENO_NN/section4.tex",
+  "plot_entry_points": [
+    "weno_z_borges_p2_results.plot_double_mach"
+  ],
+  "run_entry_point": "experiments/10_double_mach_reflection/run.sh",
+  "selected_checkpoints": {
+    "weno5_sr_fp32": "models/weno5_sr_fp32_step016500.npz",
+    "weno5_sr_fp64": "models/weno5_sr_fp64_step012250.npz",
+    "weno7_sr_fp64": "models/weno7_sr_fp64_step016750.npz"
+  }
+}

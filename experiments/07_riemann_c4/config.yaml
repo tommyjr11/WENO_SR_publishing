@@ -1,0 +1,19 @@
+experiment_id: "07_riemann_c4"
+title: "Two-dimensional Riemann configuration C.4"
+case: "C.4"
+domain: "[0, 1]^2"
+grid: "400x400"
+boundary: "outflow"
+cfl: 0.4
+t_end: 0.25
+riemann_solver: "HLLC"
+reconstruction_space: "local characteristic"
+initial_quadrature: "15x15 Gauss-Legendre"
+density_contours: "19 equally spaced density levels on [0.64,1.92]"
+selected_checkpoints:
+  weno5_sr_fp64: "../../models/weno5_sr_fp64_step012250.npz"
+  weno5_sr_fp32: "../../models/weno5_sr_fp32_step016500.npz"
+  weno7_sr_fp64: "../../models/weno7_sr_fp64_step016750.npz"
+reflection_symmetrised_inference: true
+eno_cutoff: false
+raw_data_in_release: false

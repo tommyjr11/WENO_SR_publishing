@@ -1,0 +1,179 @@
+{
+  "git_commit": "83818796250aee23b3c6cb5712c76bd87818d291",
+  "models": {
+    "weno5_js": {
+      "label": "WENO5-JS-RK3",
+      "mlp_precision": null,
+      "path": null,
+      "sha256": null,
+      "time_integrator": "SSPRK3"
+    },
+    "weno5_sr_f32": {
+      "label": "WENO5-SR-FP32-RK3",
+      "mlp_precision": "float32",
+      "path": "/home/ruijie/warp_ADER_WENO/teacherfree_lab_weno5_v20_distance_balanced_mlp_f32_fast/runs/apost_weno5_v20_mlp_f32_fast_200k/checkpoints/model_step_016500.npz",
+      "sha256": "c88441a950b91713353685edc0aa4debcb848fdddb1ba1b9442dd893a40600bc",
+      "time_integrator": "SSPRK3"
+    },
+    "weno5_sr_f64": {
+      "label": "WENO5-SR-RK3",
+      "mlp_precision": "float64",
+      "path": "/home/ruijie/warp_ADER_WENO/teacherfree_lab_weno5_v20_distance_balanced/runs/apost_weno5_v20_distance_balanced_cfl05_200k/checkpoints/model_step_012250.npz",
+      "sha256": "368759415a7dcf5567af76db06fd49c0b89260150f0fab7d9ada7f067ab3f74e",
+      "time_integrator": "SSPRK3"
+    },
+    "weno7_js": {
+      "label": "WENO7-JS-RK4",
+      "mlp_precision": null,
+      "path": null,
+      "sha256": null,
+      "time_integrator": "SSP-RK4"
+    },
+    "weno7_sr_f64": {
+      "label": "WENO7-SR-RK4",
+      "mlp_precision": "float64",
+      "path": "/home/ruijie/warp_ADER_WENO/teacherfree_lab_weno7_rk4_distance_balanced_fast/runs/apost_weno7_rk4_distance_balanced_fast_4090_200k/checkpoints/model_step_016750.npz",
+      "sha256": "0a55fd07a87e73b28e1c471991322dc256ddebccdbfdf2d5ba3722ae8dde3d93",
+      "time_integrator": "SSP-RK4"
+    }
+  },
+  "numpy": "2.4.3",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+  "protocols": {
+    "double_mach": {
+      "cfl": 0.4,
+      "classical_baselines": [
+        "plots/WENO5_MLP/weno_double_reflective_1200/weno5_classical.npy"
+      ],
+      "displayed_methods": [
+        "weno5_js",
+        "weno5_sr_f64",
+        "weno5_sr_f32",
+        "weno7_js",
+        "weno7_sr_f64"
+      ],
+      "initial_quadrature": 15,
+      "learned_methods": [
+        "weno5_sr_f64",
+        "weno5_sr_f32",
+        "weno7_sr_f64"
+      ],
+      "nx": 1200,
+      "ny": 300,
+      "reused_existing_validated_fp64_result": false,
+      "selected_results": "for_paper_results/raw/double_mach",
+      "t_end": 0.2
+    },
+    "euler_common": {
+      "cfl": 0.4,
+      "eno_cutoff": false,
+      "hllc_denominator_regularization": true,
+      "hllc_state_floors": true,
+      "hllc_tiny": 1e-16,
+      "hllc_wave_speed_estimate": "direct_davis_minmax",
+      "riemann_solver": "hllc",
+      "weno_space": "characteristic"
+    },
+    "gste": {
+      "cells": 200,
+      "cfl": 0.6,
+      "initial_quadrature": 15,
+      "methods": [
+        "weno5_js",
+        "weno5_sr_f64",
+        "weno5_sr_f32",
+        "weno7_js",
+        "weno7_sr_f64"
+      ],
+      "periodic": true,
+      "selected_results": "for_paper_results/raw/gste",
+      "t_end": 10.0
+    },
+    "riemann_2d": {
+      "configurations": {
+        "C.3 (q400)": 0.5,
+        "C.4": 0.25,
+        "C.5": 0.23,
+        "C.6": 0.3
+      },
+      "display": "shared pressure scale, density contours, velocity vectors",
+      "initial_quadrature": 15,
+      "nx": 400,
+      "ny": 400
+    },
+    "sod": {
+      "cells": [
+        51
+      ],
+      "discontinuity": 0.5,
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "geometry": "one-dimensional",
+      "initial_quadrature": 15,
+      "t_end": 0.2
+    },
+    "vortex": {
+      "meshes": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "periodic": true,
+      "t_end": 2.0
+    },
+    "weno5_timing": {
+      "cases": [
+        "C.4"
+      ],
+      "methods": [
+        "weno5_js",
+        "weno5_sr_f64",
+        "weno5_sr_f32"
+      ],
+      "nx": 400,
+      "ny": 400,
+      "repeats": 3,
+      "warmups": 1
+    }
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+  "source_sha256": {
+    "for_paper_results/make_double_mach_figures.py": "732446c4059dc375efa63d67d5161240543566ea91746c2c054b2f5a1a0af9c7",
+    "for_paper_results/make_figures.py": "5057b896acd89e461c744e4ef451478d2bbd600d05a19b96d8c4f12e9df41dfe",
+    "for_paper_results/make_riemann_figures.py": "6f53847373b758370d684fa672d8cb48a07069b4a2e918110fdbe53eb2d05bc3",
+    "for_paper_results/make_sod_point_figures.py": "1dc33b00735e8a1de81e47ddac7ed4c8a10cf8707007a9a9185979718d9a91ee",
+    "for_paper_results/run_double_mach.py": "6c010b2b48ff83e93f8e7243b362a600f3c8c50c9168f2c5c4d7bcb0bca81c5c",
+    "for_paper_results/run_gste.py": "bdc6469ae217d38f963e731713f119c04fef886714565e478e402e1e7fbe2b9e",
+    "for_paper_results/run_quadrant.py": "f2e44ea8d7bc5a32c6792676fd0424fd0a0b41665373683edec36068cb2e0453",
+    "for_paper_results/run_sod.py": "3e2b54590faf85ecb58b2133ee6e5d1796304c7bcbd247566db52ad197b23faf",
+    "for_paper_results/run_vortex.py": "a8b0ed27adf4a941ba491623408e1e273bf3003a3c1a2c797fd405f78d16deea",
+    "for_paper_results/run_weno5_timing.py": "e4fb64564d0b1627d9359696bfda8322f30df09adcbc6aa3250dd4b146f89401",
+    "for_paper_results/solvers/euler_methods.py": "36cd6d45b8870330bbf836bb3810192e236b93b9269273b60fa3a9696c852215",
+    "for_paper_results/solvers/weno5_hllc.py": "6bcc935f8efec989ebb5bd8091eaa07830467490fd92603aede963ec755949d9",
+    "for_paper_results/solvers/weno5_hllc_mixed.py": "53e7a2c862eb1dfdeae6aa5612d5da9022821f38c7bbef166f3a6f1856b3dfbd",
+    "teacherfree_lab_weno5_v20_distance_balanced/train_weno5_v20.py": "b04196602a2b5aa05c1079b6ccc413e55ddcc9bb9fa15b8f341e53c84c092f59",
+    "teacherfree_lab_weno5_v20_distance_balanced/v20_losses.py": "b46ac3800271eb387aa37a0e1aa6765f7113bc0e1b6ddfac69bf9d0c790c77e3",
+    "teacherfree_lab_weno5_v20_distance_balanced/weno5_hllc_refsym.py": "1babc962b3131925f38cdfed43a456e9131524e1b46f10e05fd7042b9ddb0afd",
+    "teacherfree_lab_weno5_v20_distance_balanced/weno5_rk3_diff_v20_deploy.py": "2b20dba9c5f46152baebeee74c2bea4a1aa0b782a238c0d85d0cad86d5ff6ef3",
+    "teacherfree_lab_weno5_v20_distance_balanced_mlp_f32_fast/fast_losses.py": "cfd795c17efeefedbc77c2bb39ee5267ca6011e779a266760dde0ae5b94b5fcb",
+    "teacherfree_lab_weno5_v20_distance_balanced_mlp_f32_fast/train.py": "5c86d66ad96ac3a97c238fe8dd8afda38af8af6e9432dc2466958e2c1ef28edf",
+    "teacherfree_lab_weno7_rk4_distance_balanced_fast/fast_losses.py": "c058c2929eb8a9f7ac0aeb0d37b68e73ef625822036f76bb4c32111701efc805",
+    "teacherfree_lab_weno7_rk4_distance_balanced_fast/rk4_advection.py": "be10d59e2231f62bad495f4fc9393270b079fda4f7d42c1a5cb945f15e574201",
+    "teacherfree_lab_weno7_rk4_distance_balanced_fast/train.py": "4b296f08390bd319de269ba10733d786ea8705b734c45a5f56cd62c34db49e4f",
+    "teacherfree_lab_weno7_rk4_distance_balanced_fast/weno7_core.py": "826099abe6e025de8337a54b6e10ba3e5d2a9f30daf267379399cbd48485d1d7",
+    "warp_weno5_helpers.py": "2703ae64ecc4077ed8f7c76783cfb06a870232db64d0e782097bd33eceede2a1",
+    "weno5_rk3_diff.py": "9705f335841ec95962d7738e00e7985e91810597f22378de7d1d390124c2142b",
+    "weno5_rk3_forward.py": "19a8ff7e3047bba3ff2a9f77c14f0c8400dc1ce5d0a7606df0e5c471442779e3",
+    "weno7_external_clean/warp_weno7_ader4_helpers_classical_only.py": "4e14e37bd602f2fdf921afccb78c21f6f6a8ba6497e0c88efbc9c72feeceee90"
+  },
+  "torch": {
+    "cuda_available": true,
+    "cuda_build": "12.8",
+    "device": "NVIDIA GeForce RTX 5080",
+    "version": "2.11.0+cu128"
+  },
+  "warp": "1.13.0"
+}
